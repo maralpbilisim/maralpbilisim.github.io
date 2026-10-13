@@ -1,0 +1,26 @@
+
+:root{--yazi:#1d2140;--ikinci:#4a5070;--zemin:#f4f6fc;--kart:#fff;--vurgu:#2a8cff;--cizgi:#e4e8f4}
+@media (prefers-color-scheme:dark){:root{--yazi:#e9ecf8;--ikinci:#aab1cc;--zemin:#0f1226;--kart:#1b1f3d;--vurgu:#6fb2ff;--cizgi:#2a2f55}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--zemin);color:var(--yazi);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--vurgu)}
+header.ust{background:linear-gradient(135deg,#2a8cff,#8a4dff 60%,#ff5a96);color:#fff;padding:64px 20px 56px;text-align:center}
+header.ust h1{margin:0 0 8px;font-size:2.4rem;letter-spacing:.5px}
+header.ust p{margin:0 auto;max-width:640px;font-size:1.1rem;opacity:.95}
+main{max-width:980px;margin:0 auto;padding:28px 16px 56px}
+h2{font-size:1.5rem;margin:34px 0 14px}
+.izgara{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.kart{background:var(--kart);border:1px solid var(--cizgi);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:8px;box-shadow:0 6px 20px rgba(20,30,80,.06)}
+.kart .simge{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;font-size:2rem;color:#fff}
+.kart h3{margin:4px 0 0;font-size:1.2rem}
+.kart p{margin:0;color:var(--ikinci)}
+.rozet{display:inline-block;font-size:.8rem;padding:2px 10px;border-radius:999px;background:var(--cizgi);color:var(--ikinci);align-self:flex-start}
+.rozet.yayinda{background:#d9f5e0;color:#176b34}
+.dugme{display:inline-block;margin-top:auto;padding:10px 16px;border-radius:12px;background:var(--vurgu);color:#fff;text-decoration:none;font-weight:600;text-align:center}
+.dugme.pasif{background:var(--cizgi);color:var(--ikinci)}
+.altlar{display:flex;gap:14px;flex-wrap:wrap;font-size:.95rem}
+footer{border-top:1px solid var(--cizgi);padding:22px 16px;text-align:center;color:var(--ikinci);font-size:.9rem}
+section.dil{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:18px 22px;margin:16px 0}
+section.dil h1{font-size:1.5rem;margin:6px 0}
+section.dil h2{font-size:1.1rem;margin:18px 0 4px}
+.tarih{color:var(--ikinci);margin:0}
